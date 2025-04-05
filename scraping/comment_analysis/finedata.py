@@ -66,5 +66,5 @@ df['special_char_count'] = df['text'].astype(str).apply(special_char_count)
 df['uppercase_ratio'] = df['text'].astype(str).apply(uppercase_ratio)
 
 # Salvando o CSV modificado
-df.to_csv('youtube_comments_2.csv', index=False)
+df.to_csv('/scraping/comment_analysis/youtube_comments_2.csv', index=False)
 print("Arquivo 'youtube_comments_2.csv' gerado com as novas colunas.")
